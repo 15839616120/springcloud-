@@ -19,6 +19,7 @@ public class CyclicBarrierDemo {
             System.out.println("******集齐7颗龙珠可以召唤神龙");
         });
 
+
         //集齐七颗龙珠的过程
         for (int i=1;i<=7;i++){
             new Thread(()->{
