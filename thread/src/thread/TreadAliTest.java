@@ -24,6 +24,7 @@ class ShareDate{
     }
 }
 
+
 public class TreadAliTest {
     public static void main(String[] args) throws Exception {
         //初始值
