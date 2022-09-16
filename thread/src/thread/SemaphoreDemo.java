@@ -22,10 +22,12 @@ public class SemaphoreDemo {
                     //设置停车时间
                     TimeUnit.SECONDS.sleep(5);
 
+                    //上述获取授权的线程离开
                     System.out.println(Thread.currentThread().getName()+"离开了车位");
                 } catch (InterruptedException e) {
                     e.printStackTrace();
                 }finally {
+                    //释放
                     semaphore.release();
                 }
             }).start();
